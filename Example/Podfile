@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LXPageControl_Example' do
+  pod 'LXPageControl', :path => '../'
+
+  target 'LXPageControl_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
