@@ -17,7 +17,7 @@ LXPageControl is a simple PageControl with lines.
 
 - Swift 4+
 - iOS 9.0+
-- Xcode 9.4
+- Xcode 8+
 
 ## Installation
 
@@ -25,7 +25,6 @@ LXPageControl is a simple PageControl with lines.
 You can use [CocoaPods](http://cocoapods.org/) to install `LXPageContrl` by adding it to your `Podfile`:
 
 ```ruby
-use_frameworks!
 pod 'LXPageControl'
 ```
 
