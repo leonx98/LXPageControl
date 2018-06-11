@@ -1,0 +1,16 @@
+PODS:
+  - LXPageControl (0.1.0)
+
+DEPENDENCIES:
+  - LXPageControl (from `../`)
+
+EXTERNAL SOURCES:
+  LXPageControl:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LXPageControl: ce507ec46f964c1b3cd430e24aa222cb7f33c77e
+
+PODFILE CHECKSUM: 1aed5961c400ae56dc30dffe3d21f43fe506d01c
+
+COCOAPODS: 1.5.3

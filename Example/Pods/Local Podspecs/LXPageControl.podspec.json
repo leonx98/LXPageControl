@@ -1,0 +1,22 @@
+{
+  "name": "LXPageControl",
+  "version": "0.1.0",
+  "summary": "A short description of LXPageControl.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/leonx98/LXPageControl",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "leonx98": "leonhoppe98@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/leonx98/LXPageControl.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LXPageControl/Classes/**/*"
+}
