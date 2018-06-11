@@ -7,18 +7,29 @@
 //
 
 import UIKit
+import LXPageControl
 
 class ViewController: UIViewController {
-
+    
+    //MARK: Outlets
+    @IBOutlet var pageControl: LXPageControl!
+    
+    //MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.pageControl.delegate = self
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+}
 
+extension ViewController: LXPageControlDelegate {
+    func pageControl(_ pageControl: LXPageControl, changeProgress to: Int) {
+        print("PageControl did change Progress to: \(to)")
+    }
+    
+    func pageControl(_ pageControl: LXPageControl, didPressedOn button: UIButton) {
+        print("Pressed Button")
+    }
 }
 

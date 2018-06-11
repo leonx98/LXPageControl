@@ -1,29 +1,112 @@
 # LXPageControl
 
-[![CI Status](https://img.shields.io/travis/leonx98/LXPageControl.svg?style=flat)](https://travis-ci.org/leonx98/LXPageControl)
-[![Version](https://img.shields.io/cocoapods/v/LXPageControl.svg?style=flat)](https://cocoapods.org/pods/LXPageControl)
-[![License](https://img.shields.io/cocoapods/l/LXPageControl.svg?style=flat)](https://cocoapods.org/pods/LXPageControl)
-[![Platform](https://img.shields.io/cocoapods/p/LXPageControl.svg?style=flat)](https://cocoapods.org/pods/LXPageControl)
+[![Swift Version][swift-image]][swift-url]
+[![Build Status][travis-image]][travis-url]
+[![License][license-image]][license-url]
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/EZSwiftExtensions.svg)](https://img.shields.io/cocoapods/v/LFAlertController.svg)  
+[![Platform](https://img.shields.io/cocoapods/p/LFAlertController.svg?style=flat)](http://cocoapods.org/pods/LFAlertController)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-## Example
+LXPageControl is a simple PageControl with lines.
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+![](Screenshots/LXPageControl-Preview.gif)
+
 
 ## Requirements
 
+- Swift 4+
+- iOS 9.0+
+- Xcode 9.4
+
 ## Installation
 
-LXPageControl is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+#### CocoaPods
+You can use [CocoaPods](http://cocoapods.org/) to install `LXPageContrl` by adding it to your `Podfile`:
 
 ```ruby
+use_frameworks!
 pod 'LXPageControl'
 ```
 
+#### Carthage
+Create a `Cartfile` that lists the framework and run `carthage update`. Follow the [instructions](https://github.com/Carthage/Carthage#if-youre-building-for-ios) to add `$(SRCROOT)/Carthage/Build/iOS/YourLibrary.framework` to an iOS project.
+
+```
+github "yourUsername/yourlibrary"
+```
+
+## Usage
+
+Either you can create the 'LinePageControl' programmatically or via Interface Builder.
+
+Via Interface Builder:<br />
+Create a 'UIView' and assign 'LinePageControl' class to it. Customize your Pages within the Xcode Attribute Inspector.
+
+Programmatically:<br />
+Create a 'LinePageControl' Instance.
+
+The buttons height are equal to the height of the view.
+
+```swift
+let linePageControl = LinePageControl()
+
+self.view.addSubview(linePageControl)
+```
+
+## Additional methods & properties
+Public Methods:
+```swift
+linePageControl.set(progress: Int, animated: Bool) // to change the current progress
+```
+
+Public Properties:
+```swift
+linePageControl.leftBtn: UIButton // button to decrease progress
+linePageControl.rightBtn: UIButton // button to increase progress
+linePageControl.pages: Int // count of Pages
+linePageControl.elementWidth: CGFloat // width of an element
+linePageControl.elementHeight: CGFloat // height of an element
+linePageControl.spacing: CGFloat // spacing between elements
+linePageControl.inactiveColor: UIColor // color of inactive elements
+linePageControl.activeColor: UIColor // color of active element
+linePageControl.cornerRadius: CGLoat // corner radius of the elements
+linePageControl.fillWidthAutomatically: Bool // determines automatically the width of each element and fill the entire view width depending on the spacing
+```
+
+Delegate:
+```swift
+linePageControl.delegate = self
+```
+
+Delegate protocol:
+```swift
+public protocol LinePageControlDelegate {
+func linePageControl(_ linePageControl: LinePageControl, didPressedOn button: UIButton)
+func linePageControl(_ linePageControl: LinePageControl, changeProgress to: Int)
+}
+```
+
+## Donation
+
+If you like my open source libraries, you can sponsor it! ☺️
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/leonx98)
+
 ## Author
 
-leonx98, leonhoppe98@gmail.com
+Leon Hoppe, leonhoppe98@gmail.com
 
 ## License
 
-LXPageControl is available under the MIT license. See the LICENSE file for more info.
+Distributed under the MIT license. See ``LICENSE`` for more information.
+
+
+[swift-image]:https://img.shields.io/badge/swift-3.0-orange.svg
+[swift-url]: https://swift.org/
+[license-image]: https://img.shields.io/badge/License-MIT-blue.svg
+[license-url]: LICENSE
+[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
+[codebeat-image]: https://codebeat.co/badges/c19b47ea-2f9d-45df-8458-b2d952fe9dad
+[codebeat-url]: https://codebeat.co/projects/github-com-vsouza-awesomeios-com
