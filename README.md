@@ -17,7 +17,7 @@ LXPageControl is a simple PageControl with lines.
 
 - Swift 4+
 - iOS 9.0+
-- Xcode 8+
+- Xcode 9+
 
 ## Installation
 
@@ -101,5 +101,5 @@ Leon Hoppe, leonhoppe98@gmail.com
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
 
-[license-image]: https://img.shields.io/badge/License-MIT-blue.svg
+[license-image]: https://img.shields.io/badge/License-MIT-green.svg
 [license-url]: LICENSE
