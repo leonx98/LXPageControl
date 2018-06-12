@@ -1,10 +1,12 @@
 # LXPageControl
 
-[![Swift Version][swift-image]][swift-url]
-[![License][license-image]][license-url]
+![Xcode 9.0+](https://img.shields.io/badge/Xcode-9.0%2B-blue.svg)
+![iOS 9.0+](https://img.shields.io/badge/iOS-9.0%2B-blue.svg)
+![Swift 4.0+](https://img.shields.io/badge/Swift-4.0%2B-orange.svg)
+![CocoaPods Compatible](https://img.shields.io/badge/pod-1.0.0-blue.svg)  
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![CocoaPods Compatible](https://img.shields.io/badge/pod-1.0.0-blue.svg)  
-[![Platform](https://img.shields.io/badge/platform-ios-lightgray.svg)
+![Platform](https://img.shields.io/badge/platform-ios-lightgray.svg)
+[![License][license-image]][license-url]
 
 LXPageControl is a simple PageControl with lines.
 
@@ -20,7 +22,7 @@ LXPageControl is a simple PageControl with lines.
 ## Installation
 
 #### CocoaPods
-You can use [CocoaPods](http://cocoapods.org/) to install `LXPageContrl` by adding it to your `Podfile`:
+You can use [CocoaPods](http://cocoapods.org/) to install `LXPageControl` by adding it to your `Podfile`:
 
 ```ruby
 pod 'LXPageControl'
@@ -99,7 +101,5 @@ Leon Hoppe, leonhoppe98@gmail.com
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
 
-[swift-image]:https://img.shields.io/badge/swift-4.0-orange.svg
-[swift-url]: https://swift.org/
 [license-image]: https://img.shields.io/badge/License-MIT-blue.svg
 [license-url]: LICENSE
