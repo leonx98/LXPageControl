@@ -30,52 +30,52 @@ pod 'LXPageControl'
 
 ## Usage
 
-Either you can create the 'LinePageControl' programmatically or via Interface Builder.
+Either you can create the 'LXPageControl' programmatically or via Interface Builder.
 
 Via Interface Builder:<br />
-Create a 'UIView' and assign 'LinePageControl' class to it. Customize your Pages within the Xcode Attribute Inspector.
+Create a 'UIView' and assign 'LXPageControl' class to it. Customize your Pages within the Xcode Attribute Inspector.
 
 Programmatically:<br />
-Create a 'LinePageControl' Instance.
+Create a 'LXPageControl' Instance.
 
 The buttons height are equal to the height of the view.
 
 ```swift
-let linePageControl = LinePageControl()
+let pageControl = LXPageControl()
 
-self.view.addSubview(linePageControl)
+self.view.addSubview(pageControl)
 ```
 
 ## Additional methods & properties
 Public Methods:
 ```swift
-linePageControl.set(progress: Int, animated: Bool) // to change the current progress
+pageControl.set(progress: Int, animated: Bool) // to change the current progress
 ```
 
 Public Properties:
 ```swift
-linePageControl.leftBtn: UIButton // button to decrease progress
-linePageControl.rightBtn: UIButton // button to increase progress
-linePageControl.pages: Int // count of Pages
-linePageControl.elementWidth: CGFloat // width of an element
-linePageControl.elementHeight: CGFloat // height of an element
-linePageControl.spacing: CGFloat // spacing between elements
-linePageControl.inactiveColor: UIColor // color of inactive elements
-linePageControl.activeColor: UIColor // color of active element
-linePageControl.cornerRadius: CGLoat // corner radius of the elements
-linePageControl.fillWidthAutomatically: Bool // determines automatically the width of each element and fill the entire view width depending on the spacing
+pageControl.leftBtn: UIButton // button to decrease progress
+pageControl.rightBtn: UIButton // button to increase progress
+pageControl.pages: Int // count of Pages
+pageControl.elementWidth: CGFloat // width of an element
+pageControl.elementHeight: CGFloat // height of an element
+pageControl.spacing: CGFloat // spacing between elements
+pageControl.inactiveColor: UIColor // color of inactive elements
+pageControl.activeColor: UIColor // color of active element
+pageControl.cornerRadius: CGLoat // corner radius of the elements
+pageControl.fillWidthAutomatically: Bool // determines automatically the width of each element and fill the entire view width depending on the spacing
 ```
 
 Delegate:
 ```swift
-linePageControl.delegate = self
+pageControl.delegate = self
 ```
 
 Delegate protocol:
 ```swift
-public protocol LinePageControlDelegate {
-func linePageControl(_ linePageControl: LinePageControl, didPressedOn button: UIButton)
-func linePageControl(_ linePageControl: LinePageControl, changeProgress to: Int)
+public protocol LXPageControlDelegate {
+func pageControl(_ pageControl: LXPageControl, didPressedOn button: UIButton)
+func pageControl(_ pageControl: LXPageControl, changeProgress to: Int)
 }
 ```
 
