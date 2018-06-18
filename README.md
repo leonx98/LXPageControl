@@ -4,7 +4,6 @@
 ![iOS 9.0+](https://img.shields.io/badge/iOS-9.0%2B-blue.svg)
 ![Swift 4.0+](https://img.shields.io/badge/Swift-4.0%2B-orange.svg)
 ![CocoaPods Compatible](https://img.shields.io/badge/pod-1.0.0-blue.svg)  
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 ![Platform](https://img.shields.io/badge/platform-ios-lightgray.svg)
 [![License][license-image]][license-url]
 
